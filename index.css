@@ -7,10 +7,14 @@ html, body {
 }
 .navbar {
     padding: 15px 25px;
-    background: #4633af;
+    background: transparent;
+    transition: .2s;
 }
 .navbar-nav {
     margin-right: 20px;
+}
+.navbar-nav .nav-item {
+    cursor: pointer;
 }
 .navbar-brand img {
     height: 40px;

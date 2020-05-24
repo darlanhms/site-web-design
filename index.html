@@ -76,6 +76,7 @@
           <img src="./images/react.png" alt="">
           <img src="./images/logo-js.png" alt="">
           <img src="./images/mongodb.png" alt="">
+          <img src="./images/node.png" alt="">
         </div>
       </div>
     </section>
@@ -104,6 +105,16 @@
                   $(this).addClass("active")
               }
             });
+
+            //adicionar uma cor na navbar quando a página for scrollada
+            $(document).scroll(function() {
+              if ($(this).scrollTop() > 0) {
+                $('.navbar').css('background', '#4633af')
+                console.log('teste');
+              }else {
+                $('.navbar').css('background', 'transparent')
+              }
+            })
         });
     </script>
 
