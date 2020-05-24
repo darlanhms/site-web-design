@@ -16,7 +16,7 @@ html, body {
     height: 40px;
 }
 header {
-    background: url(/images/header-background.jpg);
+    background: url(./images/header-background.jpg);
     min-height: 700px;
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@ header h1 {
     border-radius: 50px;
 }
 #sobre-continuacao {
-    background: url(/images/header-background.jpg);
+    background: url(./images/header-background.jpg);
     color: #ffffff;
 }
 #sobre-continuacao .content-sobre {
