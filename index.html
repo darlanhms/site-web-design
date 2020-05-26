@@ -31,7 +31,7 @@
               <a class="nav-link" data-div="#sistemas">Sistema</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-div="#sistemas">Contato</a>
+              <a class="nav-link" data-div="#contato">Contato</a>
             </li>
           </ul>
         </div>
@@ -93,29 +93,47 @@
 
     <script>
         $(document).ready(function() {
-            $(".nav-item").click(function() {
-              // scrollar a pagina para a seção desejada mas retirar os 80px da navbar pra pra navbar não ficar aparecendo na div
-              if ($(this).children().data("div")) {
-                $("body, html").animate({ scrollTop: $($(this).children().data("div")).offset().top - 80 }, 0)
-              }
-              
-              //adicionar a classe active no item que for clicado
-              if (!$(this).hasClass("active")) {
-                  $(".nav-item").removeClass("active");
-                  $(this).addClass("active")
-              }
-            });
+          $(".nav-item").click(function() {
+            // scrollar a pagina para a seção desejada mas retirar os 80px da navbar pra pra navbar não ficar aparecendo na div
+            if ($(this).children().data("div")) {
+              $("body, html").animate({ scrollTop: $($(this).children().data("div")).offset().top - 80 }, 0)
+            }
 
-            //adicionar uma cor na navbar quando a página for scrollada
-            $(document).scroll(function() {
-              if ($(this).scrollTop() > 0) {
-                $('.navbar').css('background', '#4633af')
-                console.log('teste');
-              }else {
-                $('.navbar').css('background', 'transparent')
-              }
-            })
-        });
+          });
+
+          //adicionar uma cor na navbar quando a página for scrollada
+          $(document).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+              $(".nav-item").removeClass("active");
+              $(".nav-link[href='#']").parent().addClass("active")
+
+              $('.navbar').css('background', '#4633af')
+            }else {
+              $('.navbar').css('background', 'transparent')
+            }
+
+            if ($(window).scrollTop() > $("#sobre").offset().top - 90) {
+              $(".nav-item").removeClass("active");
+              $(".nav-link[data-div='#sobre']").parent().addClass("active")
+            }
+
+            if ($(window).scrollTop() > $("#recursos").offset().top - 90) {
+              $(".nav-item").removeClass("active");
+              $(".nav-link[data-div='#recursos']").parent().addClass("active")
+            }
+
+            if ($(window).scrollTop() > $("#sistemas").offset().top - 90) {
+              $(".nav-item").removeClass("active");
+              $(".nav-link[data-div='#sistemas']").parent().addClass("active")
+            }
+
+            if ($(window).scrollTop() > $("#contato").offset().top - 90) {
+              $(".nav-item").removeClass("active");
+              $(".nav-link[data-div='#contato']").parent().addClass("active")
+            }
+
+          })
+      });
     </script>
 
 
