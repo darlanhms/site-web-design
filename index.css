@@ -1,6 +1,7 @@
 
 * {
     font-family: 'Roboto', sans-serif !important;
+    color: #ffffff;
 }
 html, body {
     scroll-behavior: smooth;
@@ -32,7 +33,6 @@ header img {
     width: 350px;
 }
 header h1 {
-    color: #ffffff;
     margin: 0px 100px;
     letter-spacing: 10px;
     font-size: 60px;
@@ -47,7 +47,6 @@ header h1 {
     background: #262431;
 }
 .alunos {
-    color: #ffffff;
     text-align: center;
 }
 .alunos .aluno {
@@ -64,11 +63,11 @@ header h1 {
 }
 #sobre-continuacao {
     background: url(https://darlanhms.github.io/site-web-design/images/header-background.jpg);
-    color: #ffffff;
 }
 #sobre-continuacao .content-sobre {
     text-align: center;
-    width: 50vw;
+    font-size: 20px;
+    width: 55vw;
 }
 #sobre-continuacao .content-sobre h1 {
     margin-bottom: 35px;
@@ -79,7 +78,6 @@ header h1 {
     justify-content: center;
 }
 #recursos {
-    color: #ffffff;
     text-align: center;
     padding: 50px;
 }
@@ -93,4 +91,48 @@ header h1 {
     background: #ffffff;
     padding: 15px;
     border-radius: 50px;
+}
+#sistemas {
+    /* background: url(https://darlanhms.github.io/site-web-design/images/header-background.jpg);*/
+    background: url(./images/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+#sistemas .content-food {
+    width: 1000px;
+    text-align: center;
+}
+#sistemas .content-food h4 {
+    margin-bottom: 15px;
+}
+#sistemas .content-food h3 {
+    font-weight: bolder;
+}
+#sistemas .content-food .row {
+    margin: 35px 0px 15px;
+}
+#sistemas .content-food .col {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sistemas .content-food .col:nth-child(1) {
+    text-align: right;
+}
+#sistemas .content-food .col:nth-child(3) {
+    text-align: left;
+}
+#sistemas .content-food ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sistemas .content-food ul li {
+    margin: 80px 0px !important;
+    font-size: 20px;
+}
+#sistemas .content-food p {
+    margin: 0px 20px;
 }
