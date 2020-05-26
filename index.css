@@ -93,8 +93,7 @@ header h1 {
     border-radius: 50px;
 }
 #sistemas {
-    /* background: url(https://darlanhms.github.io/site-web-design/images/header-background.jpg);*/
-    background: url(./images/fundo.jpg);
+    background: url(https://darlanhms.github.io/site-web-design/images/fundo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
