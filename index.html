@@ -1,123 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berry</title>
-    <link rel="icon" href="./images/berry-logo.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berry</title>
+  <link rel="icon" href="./images/berry-logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src="./images/berry-logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><img src="./images/berry-logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-div="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-div="#recursos">Recursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-div="#sistemas">Sistema</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-div="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>BERRY</h1>
+    <img src="./images/header-iphone.png" alt="">
+  </header>
+
+  <section class="section-content" id="sobre">
+    <div class="alunos">
+      <div class="aluno">
+        <img src="./images/pessoas/darlan.jpg" alt="">
+        <h4 class="nome">Darlan H.</h4>
+        <p>Front-end Developer</p>
+      </div>
+      <div class="aluno">
+        <img src="./images/pessoas/igor.jpg" alt="">
+        <h4 class="nome">Igor Sagaz</h4>
+        <p>Front-end Developer</p>
+      </div>
+      <div class="aluno">
+        <img src="./images/pessoas/vanderson.jpg" alt="">
+        <h4 class="nome">Vanderson Teodoro</h4>
+        <p>Back-end Developer</p>
+      </div>
+    </div>
+  </section>
+  <section class="section-content" id="sobre-continuacao">
+    <div class="content-sobre">
+      <h1>Sobre a nossa empresa</h1>
+      <p>Somos uma empresa focada no desenvolvimento de aplicativos móveis,</p>
+      <p>procuramos soluções rentáveis para micro-empreenderores, como restaurantes, lanchonetes, entre vários outros,
+      </p>
+      <p>soluções essas envolvendo as áreas de marketing, vendas, gestão de negócio e tudo que se adaptar as escolhas do
+        cliente</p>
+    </div>
+  </section>
+  <section class="section-content" id="recursos">
+    <div class="content-recursos">
+      <h3>Ultilizamos os frameworks mais atualizados do mercado atualmente<br> e que contém a melhor performance</h3>
+      <div class="images-frameworks">
+        <img src="./images/brands/react.png" alt="">
+        <img src="./images/brands/logo-js.png" alt="">
+        <img src="./images/brands/mongodb.png" alt="">
+        <img src="./images/brands/node.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="section-content" id="sistemas">
+    <div class="content-food">
+      <h4>Conheça o nosso primeiro sistema</h4>
+      <h3>FoodComfort</h3>
+      <div class="row">
+        <div class="col col-md-4">
+          <ul>
+            <li class="row">
+              <div class="col col-md-10">
+                <p class="text-info-system">Maior conforto para seus clientes</p>
+              </div>
+              <div class="col col-md-2">
+                <img src="./images/icons/comfort.png" width="50px" alt="">
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-div="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-div="#recursos">Recursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-div="#sistemas">Sistema</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-div="#sistemas">Contato</a>
+            <li class="row">
+              <div class="col col-md-10">
+                <p class="text-info-system">Relatórios de vendas por dia, mês, ano</p>
+              </div>
+              <div class="col col-md-2">
+                <img src="./images/icons/graphic.png" width="50px" alt="">
+              </div>
             </li>
           </ul>
         </div>
-    </nav>
-
-    <header>
-      <h1>BERRY</h1>
-      <img src="./images/header-iphone.png" alt="">
-    </header>
-
-    <section class="section-content" id="sobre">
-      <div class="alunos">
-        <div class="aluno">
-          <img src="./images/darlan.jpg" alt="">
-          <h4 class="nome">Darlan H.</h4>
-          <p>Front-end Developer</p>
+        <div class="col col-md-4">
+          <img src="./images/food.png" alt="">
         </div>
-        <div class="aluno">
-          <img src="./images/igor.jpg" alt="">
-          <h4 class="nome">Igor Sagaz</h4>
-          <p>Front-end Developer</p>
-        </div>
-        <div class="aluno">
-          <img src="./images/vanderson.jpg" alt="">
-          <h4 class="nome">Vanderson Teodoro</h4>
-          <p>Back-end Developer</p>
-        </div>
-      </div>
-    </section>
-    <section class="section-content" id="sobre-continuacao">
-      <div class="content-sobre">
-        <h1>Sobre a nossa empresa</h1>
-        <p>Somos uma empresa focada no desenvolvimento de aplicativos móveis,</p>
-        <p>procuramos soluções rentáveis para micro-empreenderores, como restaurantes, lanchonetes, entre vários outros,</p>
-        <p>soluções essas envolvendo as áreas de marketing, vendas, gestão de negócio e tudo que se adaptar as escolhas do cliente</p>
-      </div>
-    </section>
-    <section class="section-content" id="recursos">
-      <div class="content-recursos">
-        <h3>Ultilizamos os frameworks mais atualizados do mercado atualmente<br> e que contém a melhor performance</h3>
-        <div class="images-frameworks">
-          <img src="./images/react.png" alt="">
-          <img src="./images/logo-js.png" alt="">
-          <img src="./images/mongodb.png" alt="">
-          <img src="./images/node.png" alt="">
+        <div class="col col-md-4">
+          <ul>
+            <li class="row">
+              <div class="col col-md-2">
+                <img src="./images/icons/qrcode.png" width="50px" alt="">
+              </div>
+              <div class="col col-md-10">
+                <p class="text-info-system">À la carte através de QRCode</p>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col col-md-2">
+                <img src="./images/icons/money.png" width="50px" alt="">
+              </div>
+              <div class="col col-md-10">
+                <p class="text-info-system">Redução de custos e melhoria na qualidade do atendimento</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section class="section-content" id="sistemas">
-      
-    </section>
-    <section class="section-content" id="contato">
-      
-    </section>
+    </div>
+  </section>
+  <section class="section-content" id="contato">
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function() {
-            $(".nav-item").click(function() {
-              // scrollar a pagina para a seção desejada mas retirar os 80px da navbar pra pra navbar não ficar aparecendo na div
-              if ($(this).children().data("div")) {
-                $("body, html").animate({ scrollTop: $($(this).children().data("div")).offset().top - 80 }, 0)
-              }
-              
-              //adicionar a classe active no item que for clicado
-              if (!$(this).hasClass("active")) {
-                  $(".nav-item").removeClass("active");
-                  $(this).addClass("active")
-              }
-            });
+  <script>
+    $(document).ready(function () {
+      $(".nav-item").click(function () {
+        // scrollar a pagina para a seção desejada mas retirar os 80px da navbar pra pra navbar não ficar aparecendo na div
+        if ($(this).children().data("div")) {
+          $("body, html").animate({ scrollTop: $($(this).children().data("div")).offset().top - 80 }, 0)
+        }
 
-            //adicionar uma cor na navbar quando a página for scrollada
-            $(document).scroll(function() {
-              if ($(this).scrollTop() > 0) {
-                $('.navbar').css('background', '#4633af')
-              }else {
-                $('.navbar').css('background', 'transparent')
-              }
-            })
-        });
-    </script>
+      });
+
+      //adicionar uma cor na navbar quando a página for scrollada
+      $(document).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".nav-item").removeClass("active");
+          $(".nav-link[href='#']").parent().addClass("active")
+
+          $('.navbar').css('background', '#4633af')
+        } else {
+          $('.navbar').css('background', 'transparent')
+        }
+
+        if ($(window).scrollTop() > $("#sobre").offset().top - 90) {
+          $(".nav-item").removeClass("active");
+          $(".nav-link[data-div='#sobre']").parent().addClass("active")
+        }
+
+        if ($(window).scrollTop() > $("#recursos").offset().top - 90) {
+          $(".nav-item").removeClass("active");
+          $(".nav-link[data-div='#recursos']").parent().addClass("active")
+        }
+
+        if ($(window).scrollTop() > $("#sistemas").offset().top - 90) {
+          $(".nav-item").removeClass("active");
+          $(".nav-link[data-div='#sistemas']").parent().addClass("active")
+        }
+
+        if ($(window).scrollTop() > $("#contato").offset().top - 90) {
+          $(".nav-item").removeClass("active");
+          $(".nav-link[data-div='#contato']").parent().addClass("active")
+        }
+        //adicionar uma cor na navbar quando a página for scrollada
+        $(document).scroll(function () {
+          if ($(this).scrollTop() > 0) {
+            $('.navbar').css('background', '#4633af')
+          } else {
+            $('.navbar').css('background', 'transparent')
+          }
+        })
+      });
+  </script>
 
 
 </body>
+
 </html>
