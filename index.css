@@ -43,7 +43,7 @@ header h1 {
     align-items: center;
     justify-content: center;
 }
-#sobre, #recursos {
+#sobre, #recursos, #contato {
     background: #262431;
 }
 .alunos {
@@ -134,4 +134,34 @@ header h1 {
 }
 #sistemas .content-food p {
     margin: 0px 20px;
+}
+
+.box-info-pessoal{
+    background-color: #6610f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-pessoal{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-pessoal span, .info-pessoal i{
+    color: black;
+}
+
+.info-pessoal-texto{
+    display: flex;
+    flex-direction: column;
+    width: 100;
+    height: 50;
+    background-color: white;
+}
+
+.info-pessoal img {
+    width: 100px;
+    margin: 30px 30px;
+    border-radius: 20px;
 }
