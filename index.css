@@ -1,6 +1,6 @@
 
 * {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
 }
 html, body {
@@ -135,33 +135,53 @@ header h1 {
 #sistemas .content-food p {
     margin: 0px 20px;
 }
-
-.box-info-pessoal{
-    background-color: #6610f2;
-    border-radius: 20px;
+#contato .content-contact {
+    margin-bottom: 40px;
+    padding: 40px 0 0;
+}
+#contato .content-contact .content-info{
     display: flex;
-    flex-direction: row;
 }
-
-.info-pessoal{
-    display: flex;
-    flex-direction: row;
+#contato .content-contact .content-info p{
+    margin-right: 15px;
+    font-weight: 100;
 }
-
-.info-pessoal span, .info-pessoal i{
-    color: black;
+#contato .content-contact .content-info i{
+    color: #b1bdff;
+    margin-bottom: 40px;
 }
-
-.info-pessoal-texto{
-    display: flex;
-    flex-direction: column;
-    width: 100;
-    height: 50;
-    background-color: white;
+#contato .content-contact input{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #3a3846c2;
+    border: 1px solid #9791ae;
+    color: #d5d2e0;
+    padding: 7px 5px;
+    border-radius: 4px;
+    transition: border-color .2s;
 }
-
-.info-pessoal img {
-    width: 100px;
-    margin: 30px 30px;
-    border-radius: 20px;
+#contato .content-contact textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #3a3846c2;
+    border: 1px solid #9791ae;
+    color: #d5d2e0;
+    padding: 7px 5px;
+    border-radius: 4px;
+    transition: border-color .2s;
+    height: 180px;
 }
+#contato .content-contact input:focus,
+#contato .content-contact textarea:focus,
+#contato .content-contact button:focus {
+    outline: 0;
+    border: 1px solid #b6b6b6;
+}
+#contato .content-contact input:hover,
+#contato .content-contact textarea:hover {
+    outline: 0;
+    border-color: #ffffff;
+}
+/* #contato .content-contact .submit-message {
+    
+} */
