@@ -93,7 +93,7 @@
       <h4>Conheça o nosso primeiro sistema</h4>
       <h3>FoodComfort</h3>
       <div class="row">
-        <div class="col col-md-4">
+        <div class="col col-sm-12 col-md-4">
           <ul>
             <li class="row">
               <div class="col col-md-10">
@@ -113,10 +113,10 @@
             </li>
           </ul>
         </div>
-        <div class="col col-md-4">
+        <div class="col col-sm-12 col-md-4">
           <img src="./images/food.png" alt="">
         </div>
-        <div class="col col-md-4">
+        <div class="col col-sm-12 col-md-4">
           <ul>
             <li class="row">
               <div class="col col-md-2">
@@ -152,11 +152,19 @@
         <input type="email" placeholder="E-mail">
         <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
       </div>
-
       <button class="submit-message">Enviar mensagem</button>
     </div>
     </div>
   </section>
+  <footer>
+    <h4>Redes Sociais</h4>
+    <div class="icon"><i class="fab fa-facebook-f"></i></div>
+    <div class="icon"><i class="fab fa-instagram"></i></div>
+    <div class="icon"><i class="fab fa-twitter"></i></div>
+    <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+
+    <p class="direitos-autorais">Copyright © Berry - Empresa de desenvolvimentos de softwares mobile</p>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"
     integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -175,6 +183,12 @@
           $("body, html").animate({ scrollTop: $($(this).children().data("div")).offset().top - 80 }, 0)
         }
 
+        //esconde o menu ao clicar caso a tela seja menor ou igual a 991px
+        if ($(document).innerWidth() <= 991) {
+          if($('#navbarSupportedContent').hasClass('show')) {
+            $('#navbarSupportedContent').removeClass('show');
+          }
+        }
       });
 
       //adicionar uma cor na navbar quando a página for scrollada
@@ -218,8 +232,5 @@
       });
     });
   </script>
-
-
 </body>
-
 </html>
